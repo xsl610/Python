@@ -54,10 +54,19 @@ list2[2][0] = 'b1'
 print(list1, list2)
 print("*" * 40)
 
-list3 = [1, 2, 3, ['a', 'b']]
+list3 = [1, 2, ['a', 'b']]
 list4 = copy(list1)
 print(id(list1) == id(list2))
 list4[0] = 'a1'
 print(list3, list4)
-list4[3][0] = 'b1'
+list4[2][0] = 'b1'
 print(list1, list2)
+
+print("*" * 40)
+
+x = 3
+print(id(x))
+x += 2
+print(id(x))
+
+
