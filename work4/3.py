@@ -1,0 +1,7 @@
+image_file1 = open("E:/yzm.jpg", "rb")
+image_file2 = open("E:/yzm1.jpg", "wb")
+iBytes = image_file1.read()
+image_byte_count = image_file2.write(iBytes)
+print("写入的字节数量是%d" % image_byte_count)
+image_file2.close()
+image_file1.close()
